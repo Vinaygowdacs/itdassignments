@@ -1,67 +1,65 @@
-// //sum of two numbers
+//sum of two numbers
 
 
-// function addNumbers(a,b) {
-//     return a+b 
-// }
+function addNumbers(a,b) {
+    return a+b 
+}
 
-// let result = addNumbers(56,78)
+let result = addNumbers(56,78)
 
-// console.log(result)
-
-
-// //check for even or odd
-
-// function checkEvenOrOdd(number)
-// {
-//     if(number % 2 === 0){
-//         return "even"
-//     } else{
-//         return "odd"
-//     }
-// } 
-
-// let data = checkEvenOrOdd(180)
-// console.log(data)
+console.log(result)
 
 
-// //Reverse a  string
+//check for even or odd
 
-// function reverseString(inputString) {
+function checkEvenOrOdd(number)
+{
+    if(number % 2 === 0){
+        return "even"
+    } else{
+        return "odd"
+    }
+} 
 
-//     return inputString.split('').reverse().join('');
-// }
-
-// let reversed = reverseString("Hello,World")
-// console.log(reversed)
+let data = checkEvenOrOdd(180)
+console.log(data)
 
 
-// //calculate square
+//Reverse a  string
+
+function reverseString(inputString) {
+
+    return inputString.split('').reverse().join('');
+}
+
+let reversed = reverseString("Hello,World")
+console.log(reversed)
 
 
-// function calculateSquare(number) {
-//     return number **2 
-// }
+//calculate square
 
-// let squared = calculateSquare(24)
-// console.log(squared)
 
-//concatenate strings
+function calculateSquare(number) {
+    return number **2 
+}
 
-// function concatenateString(str1,str2)
-// {
-//     return str1+str2
-// }
+let squared = calculateSquare(24)
+console.log(squared)
 
-// let out = concatenateString("hello","World")
-// console.log(out)
+concatenate strings
+
+function concatenateString(str1,str2)
+{
+    return str1+str2
+}
+
+let out = concatenateString("hello","World")
+console.log(out)
  
-//check for pailndrome
+check for pailndrome
 
-function isPailndrome(str) {
-
-    // const cleanStr = str.replace(/[^a-zA-z0-9]/g,'').toLowerCase()
-
+function isPailndrome(str) 
+{
 
     return str === str.split('').reverse().join('')
 }
@@ -72,53 +70,53 @@ console.log(pailndrome)
 
 
 
-//calculate factorial
+calculate factorial
 
-// function calculateFactorial(n)
-// {
-//     if(n === 0 || n === 1){
-//         return 1
-//     } else{
-//         return n * calculateFactorial(n-1)
-//     }
-// }
-// let factorial=calculateFactorial(9)
-// console.log(factorial)
-
-
-// //Maximum of two numbers
+function calculateFactorial(n)
+{
+    if(n === 0 || n === 1){
+        return 1
+    } else{
+        return n * calculateFactorial(n-1)
+    }
+}
+let factorial=calculateFactorial(9)
+console.log(factorial)
 
 
-// function findMaxNumber(a,b){
-//     return Math.max(a,b)
-// }
-
-// let max=findMaxNumber(8,12)
-// console.log(max)
+//Maximum of two numbers
 
 
-// //greet a person
+function findMaxNumber(a,b){
+    return Math.max(a,b)
+}
 
-// function greetPerson(name){
-//     return "hello,"  + name + "! welcome !"
-// }
+let max=findMaxNumber(8,12)
+console.log(max)
 
-// let greeting = greetPerson("nithya")
-// console.log(greeting)
 
-// //calculate Average
+//greet a person
 
-// function calculateAverage(numbers){
-//     if(numbers.length === 0) {
-//         return 0
-//     }
+function greetPerson(name){
+    return "hello,"  + name + "! welcome !"
+}
 
-//     const sum = numbers.reduce((acc,num) =>
-//         acc+num,0)
-//     return sum / numbers.length
-// }
+let greeting = greetPerson("nithya")
+console.log(greeting)
 
-// let average = calculateAverage([5,10,15,20])
-// console.log(average)
+//calculate Average
+
+function calculateAverage(numbers){
+    if(numbers.length === 0) {
+        return 0
+    }
+
+    const sum = numbers.reduce((acc,num) =>
+        acc+num,0)
+    return sum / numbers.length
+}
+
+let average = calculateAverage([5,10,15,20])
+console.log(average)
 
 
